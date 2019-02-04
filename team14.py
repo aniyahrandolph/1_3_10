@@ -54,6 +54,7 @@ else:
 
 if len(their_score)>=0:
     return 'b'
+#idk what im doing ^
      
     # Test 1: Betray on first move.
     if test_move(my_history='',

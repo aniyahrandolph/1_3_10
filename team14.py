@@ -1,8 +1,8 @@
 ####
 # Each team's file must define four tokens:
-#     team_name: a string
-#     strategy_name: a string
-#     strategy_description: a string
+#     team_name: team14
+#     strategy_name: betray
+#     strategy_description: betray if score is zero or less, or if betrayed
 #     move: A function that returns 'c' or 'b'
 ####
 
@@ -45,11 +45,14 @@ def test_move(my_history, their_history, my_score, their_score, result):
             " and should have returned '" + result + "'")
         return False
 
-if len(my_score)==0: 
+if len(my_score)<=0: 
     return 'b'
 elif my_history==b and their_history==b
     return 'b'
 else:
+    return 'b'
+
+if len(their_score)>=0:
     return 'b'
      
     # Test 1: Betray on first move.
